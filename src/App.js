@@ -1,8 +1,9 @@
 import './App.css';
-import UilReact from '@iconscout/react-unicons/icons/uil-react'
 import TopButtons from './components/TopButtons'
 import Inputs from './components/Inputs'
 import TimeAndLocation from './components/TimeAndLocation'
+import TemperatureAndDetails from './components/TemperatureAndDetails';
+import Forecast from './components/Forecast'
 
 function App() {
   return (
@@ -11,7 +12,12 @@ function App() {
     shadow-gray-400 rounded-md">
       <TopButtons />
       <Inputs />
+
       <TimeAndLocation />
+      <TemperatureAndDetails />
+
+      <Forecast title="hourly forecast"/>
+      <Forecast title="daily forecast"/>
 
     </div>
   );
